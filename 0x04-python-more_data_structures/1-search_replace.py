@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 def search_replace(my_list, search, replace):
     copy = []
     for i in my_list:
@@ -7,4 +6,4 @@ def search_replace(my_list, search, replace):
             copy.append(replace)
         else:
             copy.append(i)
-    return (my_list)
+    return (copy)
