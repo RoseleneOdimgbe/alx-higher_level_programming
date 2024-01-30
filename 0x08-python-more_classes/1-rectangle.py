@@ -1,24 +1,23 @@
 #!/usr/bin/python3
-
 """
-This contains the definition for a class rectangle
+This contains a definition for the class rectangle
 """
 
 
 class Rectangle:
-    """The definition of class rectangle
+    """Definition of the class rectangle
        Attributes:
-           width(int): this is the rectangle width
-           height(int): this is the rectangle height
+           width(int): the rectangle width
+           height(int): the rectangle height
     """
     def __init__(self, width=0, height=0):
         """
             This initializes a new Class Rectangle instance
             Args:
-                width(int): this is the rectangle width
-                height(int): this is the rectangle height
+                width(int): the rectangle width
+                height(int): the rectangle height
             Raises:
-                TypeError: if the width/height is not an int
+                TypeError: if the width/height is not int
                 ValueError: if the width/ height is not >= 0
         """
         if not isinstance(width, int):
@@ -36,19 +35,19 @@ class Rectangle:
     @property
     def width(self):
         """
-            The getter function for private attribute width
-            Returns: The width of the rectangle
+            getter function for private attribute width
+            Returns: the width of the rectangle
         """
         return self.__width
 
     @width.setter
     def width(self, value):
         """
-            The setter function for private attribute width
+            setter function for private attribute width
             Args:
-                The value(int) new width value
+                value(int) new width value
             Raises:
-                TypeError: if the value is not an int
+                TypeError: if the value is not int
                 ValueError: if the value is not >= 0
         """
         if not isinstance(value, int):
@@ -60,19 +59,19 @@ class Rectangle:
     @property
     def height(self):
         """
-            The getter function for private attribute height
-            Returns: The height of the triangle
+            getter function for private attribute height
+            Returns: the height of the triangle
         """
         return self.__height
 
     @height.setter
     def height(self, value):
         """
-            The setter function for private attribute height
+            setter function for private attribute height
             Args:
-                The value(int) new width value
+                value(int) new width value
             Raises:
-                TypeError: if the value is not an int
+                TypeError: if the value is not int
                 ValueError: if the value is not >= 0
         """
         if not isinstance(value, int):
