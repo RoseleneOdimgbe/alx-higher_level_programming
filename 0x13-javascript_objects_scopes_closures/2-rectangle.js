@@ -1,14 +1,14 @@
 #!/usr/bin/node
+
+// Defines a Rectangle class
+
 class Rectangle {
-  constructor (w, h) {
-    if (arguments.length <= 1) {
-      return;
+  constructor (width, height) {
+    // we don't want invalid data here
+    if ((width > 0 && height > 0)) {
+      this.width = width;
+      this.height = height;
     }
-    if (w <= 0 || h <= 0) {
-      return;
-    }
-    this.width = w;
-    this.height = h;
   }
 }
 
